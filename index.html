@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="Stylesheet" href="style.css" />
+    <title>Stone visualization tool</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="control">
+        <table class="content-table">
+          <tr>
+            <td onclick="change_notes('A')">A</td>
+            <td onclick="change_notes('A#')">A#</td>
+            <td onclick="change_notes('B')">B</td>
+            <td onclick="change_notes('C')">C</td>
+          </tr>
+          <tr>
+            <td onclick="change_notes('C#')">C#</td>
+            <td onclick="change_notes('D')">D</td>
+            <td onclick="change_notes('D#')">D#</td>
+            <td onclick="change_notes('E')">E</td>
+          </tr>
+          <tr>
+            <td onclick="change_notes('F')">F</td>
+            <td onclick="change_notes('F#')">F#</td>
+            <td onclick="change_notes('G')">G</td>
+            <td onclick="change_notes('G#')">G#</td>
+          </tr>
+        </table>
+
+        <select class="box" id="scaleSelect" onchange="change_image()">
+          <option>Aeolian Minor Scale</option>
+          <option>Altered</option>
+          <option>Blues</option>
+          <option>Dorian</option>
+          <option>Harmonic Major</option>
+          <option>Harmonic Minor</option>
+          <option>Hexatonic</option>
+          <option>Locrian</option>
+          <option>Lydian Dominant</option>
+          <option>Lydian</option>
+          <option>Major Pentatonic</option>
+          <option>Major Scale</option>
+          <option>Melodic Minor</option>
+          <option>Minor Pentatonic</option>
+          <option>Mixolydian</option>
+          <option>Octatonic</option>
+          <option>Phrygian Dominant</option>
+          <option>Phrygian</option>
+          <option>Whole Tone</option>
+        </select>
+      </div>
+      <script src="script.js"></script>
+      <div class="result">
+        <img src="Scales/AeolianMinorScale.png" id="background" />
+        <img src="Notes/A.png" id="foreground" />
+      </div>
+    </div>
+  </body>
+</html>

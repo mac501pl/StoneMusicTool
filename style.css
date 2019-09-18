@@ -1,0 +1,97 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.wrapper {
+  display: flex;
+}
+
+.control {
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+#background {
+  position: absolute;
+  z-index: 1;
+}
+
+#foreground {
+  position: absolute;
+  z-index: 2;
+}
+
+.box {
+  background: #0563af;
+  border-radius: 20px;
+  color: #fff;
+  width: 600px;
+  height: 100px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  -webkit-appearance: button;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.box :hover {
+  background: #05599e;
+  cursor: pointer;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 150px 0 50px 0;
+  font-size: 25px;
+  min-width: 600px;
+  min-height: 700px;
+  background-color: #0563af;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+.content-table td {
+  padding: 12px 15px;
+  min-width: 100px;
+  height: 70px;
+}
+
+.content-table tbody td {
+  border: 1px solid #fff;
+}
+.content-table tr :hover {
+  background-color: #05599e;
+  cursor: pointer;
+}
+
+.content-table tr:first-child td {
+  border-top: 0;
+}
+.content-table tr:last-child td {
+  border-bottom: 0;
+}
+.content-table tr td:first-child,
+.content-table tr th:first-child {
+  border-left: 0;
+}
+.content-table tr td:last-child,
+.content-table tr th:last-child {
+  border-right: 0;
+}
+
+.result {
+  flex: 1;
+  margin: 100px 100px 100px 200px;
+}
